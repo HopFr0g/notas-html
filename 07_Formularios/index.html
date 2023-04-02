@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<!-- Para crear formularios se utiliza la etiqueta form -->
+		<!-- Tiene un atributo method="" (por defecto es "head") que define el metodo HTTP que se utilizara para enviar el form -->
+		
+		<form method="post">
+
+			<!-- Dentro de los formularios, se pueden utilizar los siguientes elementos -->
+
+			<!-- La etiqueta input permite que el cliente ingrese datos y tiene los siguientes atributos-->
+			<!-- El atributo name="" se utiliza para que el servidor (backend) identifique a cada input -->
+			<!-- El atributo type="" indica que tipo de dato debe ingresar el usuario (por default es "text") -->
+			<!-- El contenido que tendra el elemento (por ejemplo, el texto dentro de un boton) se especifica con value="Texto" -->
+			<!-- required="" hace que sea obligatorio completar ese input -->
+
+			<input type="text" required="">
+			<input type="password">
+			<input type="number">
+			<input type="email">
+			<input type="color">
+			<input type="range" min="1" max="5">
+			<input type="date">
+			<input type="time">
+			<input type="button" value="Texto del boton">
+			<input type="submit">
+
+			<!-- La etiqueta textarea crea campos de texto que se pueden redimensionar -->
+			<!-- si se utiliza el atributo readonly="" el usuario no podra editarla -->
+			<!-- Tambien se le puede dar un uso similar al input -->
+
+			<textarea readonly="">Text area de solo lectura, puedes leer esto pero no editarlo :)</textarea>
+
+		</form>
+
+	</body>	
+</html>

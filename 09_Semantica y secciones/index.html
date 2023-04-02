@@ -1,0 +1,69 @@
+<!-- Semántica: Cómo escribir contenido HTML de forma correcta y organizada -->
+
+<!-- Lo primero que debe tener una página (arriba) es un encabezado y un nav (pueden estar juntos o separados) -->
+<!-- Nav es una sección que presenta enlaces para la navegación. Se utiliza la etiqueta <nav> -->
+<!-- El header contiene el logo de la aplicación web y otros elementos que suelen ubicarse en ese lugar -->
+
+<!-- Debajo, puede crearse un artículo, que a su vez esté dividido en secciones -->
+
+<!-- A un lado se coloca el "aside", una barra de navegación con contenido secundario, menos importante -->
+
+<!-- El pie de pagina (footer) debe ir en la parte inferior de la página -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Secciones</title>
+	</head>
+	<body>
+		<!-- Comenzar con un <header> que es el encabezado de la página -->
+		<header>
+			<!-- El header contendrá, en su interior, una barra de navegación a distintos sitios, por lo que se usa <nav> -->
+			<nav>
+				<!-- Los elementos de la barra de navegación se ubican dentro de listas <ul> -->
+				<ul>
+					<!-- En su interior, se colocarán ítems con <li> que a su vez contendrán los enlaces <a href="enlace"> -->
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="nosotros.html">Sobre nosotros</a></li>
+					<li><a href="informacion.html">Mas informacion</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<h1>Página principal</h1>
+
+		<!-- Se usa <article> para crear artículos. Por ejemplo, un artículo periodístico en la página -->
+		<article>
+			<!-- Aquí dentro, se divide cada artículo en secciones con <section>, incluso si habrá una sola sección -->
+			<section>
+				<h2>Noticia de ultimo momento.</h2>
+				<h3>No te ilusiones, solo es un ejemplo.</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+		</article>
+
+		<!-- La información secundaria se coloca en la sección <aside> -->
+		<aside>
+			<h2>Contenido extra:</h2>
+			<p>Esta sección (aside) suele colocarse a un costado de la pantalla, aunque eso se logra con CSS</p>
+		</aside>
+
+		<!-- Se utiliza la seccion <footer> para crear el pie de pagina -->
+		<footer>
+			<h4>Copyright - todos los derechos reservados (o no)</h4>
+			<h6>Seguinos en nuestras redes:</h6>
+			<ul>
+				<li><a href="https://www.google.com">Google</a></li>
+				<li><a href="https://www.youtube.com">Youtube</a></li>
+				<li><a href="https://mail.google.com">Gmail</a></li>
+			</ul>
+		</footer>
+
+	</body>
+</html>

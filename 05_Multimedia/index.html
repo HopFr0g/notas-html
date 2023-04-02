@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Multimedia</title>
+	</head>
+	<body>
+
+		<h1>Mi primera imagen, video y audio:</h1>
+		<p>A continuacion veras mi primera <b>imagen, video y audio</b> en HTML:</p>
+
+		<!-- Para insertar una imagen se utiliza la etiqueta <img> -->
+		<!-- con el parámetro src="path del archivo local o link del archivo externo" -->
+		<!-- El parámetro alt="nombre" le da un nombre a la imagen, que aparecerá en el navegador si la imagen no cargó bien -->
+		<!-- El parámetro title="titulo" le da un titulo a la imagen, que aparecerá cuando pasemos el mouse por arriba -->
+		<!-- es una etiqueta que se cierra sola (no se debe usar </img> al final) -->
+		<img src="gawrgura.png" alt="Imagen de Gawr Gura" title="Gawr Gura">
+
+		<!-- Los parámetros width="" y height="" cambian el ancho y alto de la imagen, respectivamente -->
+		<!-- Si especifico solo uno de los dos, el otro se dimensionará automáticamente para mantener la relación de aspecto -->
+		<!-- También puedo modificar los dos juntos y elegir valores que no mantengan la relación de aspecto -->
+		<img src="gawrgura.png" width="100">
+		<img src="gawrgura.png" width="100" height="20">
+		<!-- No recomendado, es mejor modificar el tamaño con CSS -->
+
+		<!-- Los videos se insertan con la etiqueta <video> -->
+		<!-- Esta sí debe cerrarse luego con </video> -->
+		<!-- Se le agrega el parámetro "controls" sin ningún ="valor" para que el navegador agregue controles al video -->
+		<video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" controls height="144px"></video>
+
+		<!-- Para reproducir un audio, usar la etiqueta <audio></audio> también con el parámetro controls -->
+		<!-- Además de un archivo de audio, se podría usar un archivo de video para reproducir solo su audio -->
+		<audio src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" controls></audio>
+
+	</body>
+</html>
